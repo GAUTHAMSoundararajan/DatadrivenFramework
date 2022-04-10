@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse-636135571\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\hp\Desktop\workspace\DatadrivenFramework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CreateAccountTC" hash-for-method="verifyCreateAccount({Company=ABCDEF, Email=newtest2@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...)">verifyCreateAccount({Company=ABCDEF, Email=newtest2@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CreateAccountTC" hash-for-method="verifyCreateAccount({Company=ABCDEF, Email=newtest3@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...)">verifyCreateAccount({Company=ABCDEF, Email=newtest3@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases" hash-for-method="testing">testing</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CreateAccountTC" hash-for-method="verifyCreateAccount({Company=ABCDEF, Email=newtest111@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=S...)">verifyCreateAccount({Company=ABCDEF, Email=newtest111@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=S...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CreateAccountTC" hash-for-method="verifyCreateMyAccount(ghfsdtyfg@gmail.com)">verifyCreateMyAccount(ghfsdtyfg@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.SignInAccountTC" hash-for-method="verifyHomePage(admin@xyz.com, admin@123)">verifyHomePage(admin@xyz.com, admin@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,114 +145,326 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.CreateAccountTC</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testing">
-                  </a> <!-- testing -->
-                  <span class="method-name">testing</span>
+                  <a name="verifyCreateAccount({Company=ABCDEF, Email=newtest2@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...)">
+                  </a> <!-- verifyCreateAccount({Company=ABCDEF, Email=newtest2@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...) -->
+                  <span class="method-name">verifyCreateAccount</span>
+                  <span class="parameters">({Company=ABCDEF, Email=newtest2@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San, MobilePhone=8489875678, Month=7, Year=1985, State=Alabama, Zipcode=91436, Country=United States, LastName=UserTest, SetPassword=hgsdtyf, Day=22})</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2C7DCHN&apos;, ip: &apos;192.168.0.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: driver.version: RemoteWebDriver
+	at pageObjects.CreateAccountPageObjects.performclick(CreateAccountPageObjects.java:207)
+	at testCases.CreateAccountTC.verifyCreateAccount(CreateAccountTC.java:57)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateAccount({Company=ABCDEF, Email=newtest3@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...)">
+                  </a> <!-- verifyCreateAccount({Company=ABCDEF, Email=newtest3@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...) -->
+                  <span class="method-name">verifyCreateAccount</span>
+                  <span class="parameters">({Company=ABCDEF, Email=newtest3@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San, MobilePhone=8489875678, Month=7, Year=1985, State=Alabama, Zipcode=91436, Country=United States, LastName=UserTest, SetPassword=hgsdtyf, Day=22})</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2C7DCHN&apos;, ip: &apos;192.168.0.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: driver.version: RemoteWebDriver
+	at pageObjects.CreateAccountPageObjects.performclick(CreateAccountPageObjects.java:207)
+	at testCases.CreateAccountTC.verifyCreateAccount(CreateAccountTC.java:57)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.CreateAccountTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateAccount({Company=ABCDEF, Email=newtest111@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=S...)">
+                  </a> <!-- verifyCreateAccount({Company=ABCDEF, Email=newtest111@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=S...) -->
+                  <span class="method-name">verifyCreateAccount</span>
+                  <span class="parameters">({Company=ABCDEF, Email=newtest111@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San, MobilePhone=8489875678, Month=7, Year=1985, State=Alabama, Zipcode=91436, Country=United States, LastName=UserTest, SetPassword=hgsdtyf, Day=22})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateMyAccount(ghfsdtyfg@gmail.com)">
+                  </a> <!-- verifyCreateMyAccount(ghfsdtyfg@gmail.com) -->
+                  <span class="method-name">verifyCreateMyAccount</span>
+                  <span class="parameters">(ghfsdtyfg@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.SignInAccountTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePage(admin@xyz.com, admin@123)">
+                  </a> <!-- verifyHomePage(admin@xyz.com, admin@123) -->
+                  <span class="method-name">verifyHomePage</span>
+                  <span class="parameters">(admin@xyz.com, admin@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse-636135571\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hp\Desktop\workspace\DatadrivenFramework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utility.ListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases&quot;/&gt;
+      &lt;class name=&quot;testCases.CreateAccountTC&quot;/&gt;
+      &lt;class name=&quot;testCases.SignInAccountTC&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test name=&quot;Test(failed)&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.CreateAccountTC&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;afterSuite&quot;/&gt;
+          &lt;include name=&quot;verifyCreateAccount&quot; invocation-numbers=&quot;1 2&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;loadConfig&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testCases.CreateAccountTC --&gt;
+      &lt;class name=&quot;testCases.SignInAccountTC&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testCases.SignInAccountTC --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test(failed) (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCreateMyAccount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomePage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCreateAccount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testing')
-data.setCell(0, 2, 'testcases')
-data.setCell(0, 3, 91030);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'verifyCreateAccount')
+data.setCell(0, 2, 'testCases.CreateAccountTC')
+data.setCell(0, 3, 16077);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyCreateAccount')
+data.setCell(1, 2, 'testCases.CreateAccountTC')
+data.setCell(1, 3, 15518);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyCreateAccount')
+data.setCell(2, 2, 'testCases.CreateAccountTC')
+data.setCell(2, 3, 11588);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyHomePage')
+data.setCell(3, 2, 'testCases.SignInAccountTC')
+data.setCell(3, 3, 4503);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyCreateMyAccount')
+data.setCell(4, 2, 'testCases.CreateAccountTC')
+data.setCell(4, 3, 3337);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.SignInAccountTC</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">loadConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testing</span>
+              <div class="chronological-class-name">testCases.CreateAccountTC</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">loadConfig</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateAccount({Company=ABCDEF, Email=newtest111@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=S...)</span>
+                <span class="method-start">17898 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29490 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">29490 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCreateAccount({Company=ABCDEF, Email=newtest2@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...)</span>
+                <span class="method-start">38622 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">54487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCreateAccount({Company=ABCDEF, Email=newtest3@gmail.com, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San...)</span>
+                <span class="method-start">62739 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78993 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">79108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateMyAccount(ghfsdtyfg@gmail.com)</span>
+                <span class="method-start">86394 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">89731 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.SignInAccountTC</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">89808 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePage(admin@xyz.com, admin@123)</span>
+                <span class="method-start">97822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">102326 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CreateAccountTC</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">102347 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

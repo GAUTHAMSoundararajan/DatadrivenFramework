@@ -87,16 +87,16 @@ public class CreateAccountPageObjects extends Base {
 			break;
 		case"day":
 		case "days":
-			Action.selectByVisibleText(dayDropdown, value);
+			Action.selectByValue(dayDropdown, value);
 			break;
 		case"mon":
 		case "months":
 		case "month":
-			Action.selectByVisibleText(monthDropdown, value);
+			Action.selectByValue(monthDropdown, value);
 			break;
 		case"year":
 		case "years":
-			Action.selectByVisibleText(yearDropdown, value);
+			Action.selectByValue(yearDropdown, value);
 			break;
 		case "addressfirstname":
 		   Action.type(addressFirstNameTxtbox, value);

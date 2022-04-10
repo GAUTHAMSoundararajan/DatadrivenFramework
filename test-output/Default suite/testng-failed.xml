@@ -3,7 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="testcases"/>
+      <class name="testCases.CreateAccountTC"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testCases.CreateAccountTC">
+        <methods>
+          <include name="verifyCreateAccount"/>
+          <include name="verifyCreateMyAccount"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- testCases.CreateAccountTC -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

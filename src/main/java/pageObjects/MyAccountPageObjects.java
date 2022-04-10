@@ -73,6 +73,7 @@ public class MyAccountPageObjects extends Base {
 			Action.type(emailAddressTxtBox, value);
 			break;
 		case "emailaddress":
+		case "email":
 		case "signinemail":
 			Action.type(emailTxtBox, value);
 			break;
